@@ -35,8 +35,8 @@ function update_time(){
         let date_digit = parseInt(digit_object[key]);
         let single_segment_map = segments[date_digit];
         let single_segment_map_arr = single_segment_map.split("");
-        for (let j = 0; j < single_segment_map_arr.length; j++) {
-            $('#' + key + '_' + single_segment_map_arr[j]).show(); 
-        }
+        $.each(single_segment_map_arr, function(index, value) {
+            $('#' + key + '_' + value).show();
+        });
     }
 }
