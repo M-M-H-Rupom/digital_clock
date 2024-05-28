@@ -1,0 +1,99 @@
+:root {
+    --red: rgb(240, 16, 16);
+  }
+  .segment{display: none;}
+.clock_container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.clock_container span{
+    margin: 0;
+    padding: 0;
+    font-size:28px;
+}
+.dt_time{
+    align-items: center;
+    width: 70px;
+    height: 120px;
+    margin: 0 5px;
+    /* background-color: rgb(204, 203, 203); */
+    border-radius: 10px;
+    color: var(--red);
+    font-size: 18px;
+    position: relative;
+    margin-right: -20px;
+}
+.hours_content,
+.second_content,
+.minute_content{
+    display: flex;
+    flex-direction: row;
+    margin: 42px;
+}
+.cell_a{
+    position: absolute;
+    top: 15px;
+    left: 30%;
+    width: 28px;
+    height: 6px;
+    background: var(--red);
+    border-radius:4px;
+    /* display: block; */
+}
+.cell_b{
+    position: absolute;
+    left: 68%;
+    top: 17%;
+    width: 6px;
+    height: 28px;
+    background: var(--red);
+    border-radius:5px;
+}
+.cell_e{
+    position: absolute;
+    left: 25%;
+    top: 45%;
+    width: 6px;
+    height: 28px;
+    background: var(--red);
+    border-radius:5px;
+}
+.cell_f{
+    position: absolute;
+    left: 25%;
+    top: 17%;
+    width: 6px;
+    height: 28px;
+    background: var(--red);
+    border-radius:5px;
+}
+.cell_g{
+    position: absolute;
+    top: 40%;
+    left: 30%;
+    width: 28px;
+    height: 6px;
+    background: var(--red);
+    border-radius:4px;
+}
+.cell_c{
+    position: absolute;
+    left: 68%;
+    top: 44%;
+    width: 6px;
+    height: 28px;
+    background: var(--red);
+    border-radius:5px;
+}
+.cell_d{
+    position: absolute;
+    top: 67%;
+    left: 32%;
+    width: 28px;
+    height: 6px;
+    background: var(--red);
+    border-radius:4px;
+}
